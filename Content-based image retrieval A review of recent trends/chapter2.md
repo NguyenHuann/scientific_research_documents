@@ -1,6 +1,7 @@
 # 2. Khung CBIR
 
-Khung tổng quát của CBIR bao gồm một số giai đoạn bắt buộc và một số giai đoạn tùy chọn, như được minh họa trong **Hình 1**.
+## Khung tổng quát của CBIR bao gồm một số giai đoạn bắt buộc và một số giai đoạn tùy chọn, như được minh họa trong **Hình 1**.
+
 ![Figure 1](Content-based image retrieval A review of recent trends/figures/figure1.jpg)
 
 - **Giai đoạn đầu tiên** trong CBIR là người dùng gửi ảnh truy vấn (query image). Tất cả các tiến trình được áp dụng cho ảnh truy vấn cũng sẽ được áp dụng cho toàn bộ ảnh trong cơ sở dữ liệu, và theo cùng một thứ tự (Kokare và cộng sự, 2002).
