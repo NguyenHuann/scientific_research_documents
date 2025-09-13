@@ -57,8 +57,19 @@ Vì những lý do này, việc chọn tập dữ liệu cần được cân nh�
 
 ---
 
-【Bảng 6】 trình bày các tập dữ liệu được sử dụng phổ biến nhất trong lĩnh vực CBIR.
+## Bảng 6. Một số tập dữ liệu được sử dụng rộng rãi trong lĩnh vực CBIR
 
----
-
-👉 Bạn có muốn mình dịch tiếp nguyên văn **Bảng 6 (các tập dữ liệu phổ biến trong CBIR)** không?
+| **Tên tập dữ liệu**                                         | **Số lượng ảnh** | **Phiên bản** | **Số lớp** | **Số ảnh trong mỗi lớp** |
+| ----------------------------------------------------------- | ---------------- | ------------- | ---------- | ------------------------ |
+| **Corel (J. Z. Wang et al., 2000)**                         | 1000             | Corel 1k      | 10         | 100                      |
+|                                                             | 1500             | Corel 1.5k    | 15         | 100                      |
+|                                                             | 5000             | Corel 5k      | 50         | 100                      |
+|                                                             | 10,000           | Corel 10k     | 100        | 100                      |
+| **WANG (J. Z. Wang et al., 2000)**                          | 1000             | SIMPLIcity    | 10         | 100                      |
+|                                                             | 10,000           | WBIIS         | 10         | 1000                     |
+| **Holiday (Jain et al., 2011)**                             | 1491             | Không áp dụng | 500        | Thay đổi                 |
+| **Oliva (Oliva & Torralba, 2001) – (Das et al., 2016)**     | 2688             | QT-Scene      | 8          | Thay đổi                 |
+| **CIFAR (Yang et al., 2018)**                               | 60,000           | CIFAR-10      | 10         | 6000                     |
+| **Caltech (Fei-Fei et al., 2007) – (Griffin et al., 2007)** | Hơn 9000         | Caltech 101   | 101        | Thay đổi                 |
+|                                                             | 30,607           | Caltech 256   | 256        | 80                       |
+| **GHIM (Srivastava & Khare, 2017) – (Ashraf et al., 2020)** | 10,000           | Không áp dụng | 20         | 500                      |
