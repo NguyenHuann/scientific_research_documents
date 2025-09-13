@@ -2,7 +2,7 @@
 
 ## Status:
 
-## Đang dịch
+Đang dịch
 
 ## List:
 
