@@ -1,11 +1,3 @@
-## Figure 4. Machine learning algorithms.
-
-![Figure 4](figures/figure4.png)
-
-## Figure 5. SVM classifier.
-
-## ![Figure 5](figures/figure5.jpg)
-
 # 3.2.4. Histogram of Oriented Gradient (HOG)
 
 Dalal và Triggs (2005) đề xuất **HOG (histogram của gradient có hướng)**, một bộ mô tả được chuẩn hóa cục bộ, đạt hiệu năng cao hơn so với các bộ mô tả đặc trưng khác (bao gồm wavelet).
@@ -83,49 +75,3 @@ Một số mô tả cấu trúc cục bộ mới được phát triển:
 - **MCLTP (Agarwal et al., 2019):** mô tả nhị phân bậc ba trên không gian HSV, kết hợp 2 kênh màu. Vector đặc trưng 3072 chiều.
 
 ## Nhược điểm chung: **vector đặc trưng có số chiều lớn → tăng chi phí tính toán.**
-
-## Figure 6. An example of CNN architecture
-
-![Figure 6](figures/figure6.jpg)
-
-# 【Bảng 3】
-
-**Đặc điểm chính, hạn chế và ví dụ của các nhóm học máy chính**
-
-| Phương pháp                                                 | Đặc điểm chính                                                                                                          | Hạn chế                                                                               | Ví dụ                                                            |
-| ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
-| **Học có giám sát (Supervised Learning – Classification)**  | - Cần nhãn dữ liệu.<br>- Dự đoán và phân loại vào lớp xác định.                                                         | - Kích thước tập huấn luyện ảnh hưởng trực tiếp đến độ chính xác.                     | SVM, ANN                                                         |
-| **Học không giám sát (Unsupervised Learning – Clustering)** | - Không cần nhãn dữ liệu.<br>- Học sự tương đồng và ngữ nghĩa giữa dữ liệu, khái quát hóa mô hình để xử lý dữ liệu mới. | - Dễ overfitting.<br>- Khó mở rộng quy mô.<br>- Số lượng cụm ảnh hưởng đến hiệu suất. | K-means, K-means++                                               |
-| **Học sâu (Deep Learning)**                                 | - Có thể giám sát hoặc không giám sát.<br>- Sinh mô hình học tự động.                                                   | - Chi phí tính toán rất cao.<br>- Cấu trúc phức tạp.                                  | CNN, Deep Neural Network, Deep Belief Network, Boltzmann Machine |
-
----
-
-# 【Bảng 4】
-
-**Tóm tắt hiệu năng của các thuật toán học máy trong CBIR**
-
-| Tham khảo              | Thuật toán                    | Bộ dữ liệu                                  | Độ chính xác                   | Vấn đề                                                                               | Hạn chế                                                               |
-| ---------------------- | ----------------------------- | ------------------------------------------- | ------------------------------ | ------------------------------------------------------------------------------------ | --------------------------------------------------------------------- |
-| Yousuf et al. (2018)   | K-means, SVM                  | Corel 1k, Corel 1.5k, Caltech 256           | 0.8730, 0.8520, 0.3030         | Giảm khoảng cách ngữ nghĩa giữa đặc trưng mức cao & thấp.                            | Descriptor số chiều lớn.                                              |
-| Sarwar et al. (2019)   | SVM                           | WANG 1k, WANG 1.5k, Holiday                 | 0.8958, 0.7602, 0.6923         | - Giảm khoảng cách ngữ nghĩa.<br>- Bất biến với xoay, ánh sáng.<br>- PCA giảm chiều. | Chưa kiểm chứng trên tập lớn.<br>Không dùng cho ảnh đa phổ.           |
-| Mehmood et al. (2018)  | K-means++, SVM                | Corel 1k, Corel 1.5k, Corel 5k, Caltech 256 | 0.8061, 0.7628, 0.6060, 0.4630 | Cung cấp thông tin không gian, hoạt động tốt trong nhiễu & ánh sáng yếu.             | HOG không dùng cho ảnh đa phổ.                                        |
-| Ashraf et al. (2015)   | ANN                           | Corel, Coil, Caltech 101                    | 0.8200                         | Truy hồi dựa trên đối tượng chính trong ảnh.                                         | Phân đoạn làm chậm hệ thống.                                          |
-| AlZu’bi et al. (2017)  | CNN                           | Oxford 5k, Oxford 105k                      | 0.9570, 0.8860                 | Không cần nhãn.<br>Vector ngắn (16).<br>Giảm bộ nhớ và thời gian.                    | Độ chính xác giảm khi dữ liệu lớn.                                    |
-| Tzelepi & Tefas (2018) | CNN (giám sát/không giám sát) | Paris 6k, UKBench                           | 0.9859, 0.8347                 | Giảm chiều descriptor, giữ thông tin không gian.                                     | Thời gian truy hồi tăng.                                              |
-| Q. Zheng et al. (2019) | CNN                           | Caltech 101, Holiday, Oxford                | 0.8850, 0.9410, 0.9620         | Sử dụng VGG-16, so sánh độ tương đồng.                                               | Cần tăng tốc huấn luyện, tốn thời gian xây dựng dữ liệu trọng trường. |
-| Sezavar et al. (2019)  | CNN                           | Corel, ALOI, MPEG-7                         | 0.9559, 0.9706, 0.7749         | Giảm chi phí tính toán.                                                              | Thời gian truy hồi tăng nếu không dùng sparse representation.         |
-
----
-
-# 【Bảng 5】
-
-**So sánh các kỹ thuật CBIR khác nhau**
-
-| Tham khảo                 | Phương pháp trích xuất | Độ chính xác | Điểm mạnh                                                                                                          | Hạn chế                                                       |
-| ------------------------- | ---------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------- |
-| Srivastava & Khare (2017) | Toàn cục               | 0.9999       | - Cung cấp thông tin hướng & không gian.<br>- Bất biến với thay đổi tỷ lệ, xoay.                                   | Tăng độ phức tạp tính toán.<br>DWT nhạy với nhiễu.            |
-| Phadikar et al. (2018)    | Toàn cục               | 0.9850       | - Xem xét đồng thời màu, kết cấu, hình dạng.<br>- GA tăng độ chính xác.                                            | GA làm tăng chi phí tính toán.                                |
-| Sarwar et al. (2019)      | Cục bộ                 | 0.8958       | - Giảm khoảng cách ngữ nghĩa.<br>- Bất biến với xoay, ánh sáng.<br>- PCA giảm chiều.                               | Không thử trên tập lớn.<br>Mất thông tin phổ và không gian.   |
-| Yousuf et al. (2018)      | Cục bộ                 | 0.8730       | - Giảm khoảng cách ngữ nghĩa.<br>- Bất biến với xoay, chiếu sáng, tỷ lệ.<br>- Hoạt động tốt trong tương phản thấp. | Descriptor số chiều cao.                                      |
-| Tzelepi & Tefas (2018)    | CNN                    | 0.9859       | - Giảm chiều descriptor.<br>- Giữ thông tin không gian.                                                            | Thời gian truy hồi tăng.                                      |
-| Sezavar et al. (2019)     | CNN                    | 0.9706       | Giảm chi phí tính toán.                                                                                            | Thời gian truy hồi tăng nếu không dùng sparse representation. |
